@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Live Editor</title>
+    <style>
+        body {
+            display: flex;
+            margin: 0;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        textarea, iframe {
+            border: none;
+            height: 100%;
+            margin: 0;
+        }
+
+        textarea {
+            width: 50%;
+            padding: 10px;
+            font-size: 14px;
+            line-height: 1.6;
+            resize: none;
+            border-right: 1px solid #ddd;
+        }
+
+        iframe {
+            width: 50%;
+            background: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <textarea id="editor">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preview</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        h1 { color: #4a90e2; }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Este é um editor ao vivo.</p>
+</body>
+</html>
+    </textarea>
+    <iframe id="preview"></iframe>
+
+    <script>
+        const editor = document.getElementById('editor');
+        const preview = document.getElementById('preview');
+
+        function updatePreview() {
+            const content = editor.value;
+            preview.srcdoc = content;
+        }
+
+        editor.addEventListener('input', updatePreview);
+
+        // Atualiza o preview ao carregar
+        updatePreview();
+    </script>
+</body>
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eBooks Gratuitos - Primer Cyber Infortech</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            padding-top: 60px; /* Espaço para a barra de navegação fixa */
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2rem;
+            color: #4a90e2;
+        }
+
+        /* Barra de navegação */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #4a90e2;
+            padding: 10px 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #9013fe;
+            transform: scale(1.05);
+        }
+
+        /* Estilo das abas */
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .tabs button {
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            margin: 0 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .tabs button:hover {
+            background-color: #9013fe;
+        }
+
+        /* Estilo dos eBooks */
+        .ebooks-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .ebook-item {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 48%;
+            margin-bottom: 20px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .ebook-item h3 {
+            font-size: 1.2rem;
+            color: #4a90e2;
+            margin-bottom: 10px;
+        }
+
+        .ebook-item p {
+            font-size: 1rem;
+            color: #777;
+            margin-bottom: 15px;
+        }
+
+        .cover {
+            width: 100%;
+            height: 200px;
+            background-color: #ddd;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .download-btn,
+        .details-btn {
+            background-color: #4a90e2;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .download-btn:hover,
+        .details-btn:hover {
+            background-color: #9013fe;
+        }
+
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="file:///C:/Users/Wilker/Documents/root/index.html">Início</a></li>
+        <li><a href="file:///C:/Users/Wilker/Documents/root/Sobre.html">Sobre</a></li>
+        <li><a href="file:///C:/Users/Wilker/Documents/root/serviços.html">Serviços</a></li>
+        <li><a href="file:///C:/Users/Wilker/Documents/root/ebook.html">eBooks</a></li>
+        <li><a href="file:///C:/Users/Wilker/Documents/root/Contato.html#">Contato</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <h1>eBooks Gratuitos - Primer Cyber Infortech</h1>
+    
+    <div class="tabs">
+        <button onclick="showTab(1)">Fundamentos de Tecnologia</button>
+        <button onclick="showTab(2)">Avançando no Mundo Digital</button>
+    </div>
+
+    <!-- Fundamentos de Tecnologia -->
+    <div id="tab1" class="ebooks-list">
+        <!-- Aqui seus eBooks -->
+    </div>
+
+    <!-- Avançando no Mundo Digital -->
+    <div id="tab2" class="ebooks-list" style="display:none;">
+        <!-- Aqui seus eBooks -->
+    </div>
+</div>
+
+   <!-- Fundamentos de Tecnologia -->
+    <div id="tab1" class="ebooks-list">
+        <div class="ebook-item">
+            <h3>Introdução ao Hardware de Computadores</h3>
+            <div class="cover" style="background-image: url('imagens/l.jpg');"></div>
+            <p>Aprenda os componentes e o funcionamento básico dos computadores.</p>
+            <div class="buttons">
+                <a class="download-btn" href="download/l.pdf" download>Baixar</a>
+                <a class="details-btn" href="detalhes/ebook1.html">Detalhes</a>
+            </div>
+        </div>
+        <div class="ebook-item">
+            <h3>Sistemas Operacionais: O Que Você Precisa Saber</h3>
+            <div class="cover" style="background-image: url('imagens/ebook2.jpg');"></div>
+            <p>Entenda os principais sistemas operacionais e suas funções.</p>
+            <div class="buttons">
+                <a class="download-btn" href="download/ebook2.pdf" download>Baixar</a>
+                <a class="details-btn" href="detalhes/ebook2.html">Detalhes</a>
+            </div>
+        </div>
+        <div class="ebook-item">
+            <h3>Redes de Computadores: Conceitos Básicos</h3>
+            <div class="cover" style="background-image: url('imagens/ebook3.jpg');"></div>
+            <p>Introdução aos conceitos de redes e como elas funcionam.</p>
+            <div class="buttons">
+                <a class="download-btn" href="download/ebook3.pdf" download>Baixar</a>
+                <a class="details-btn" href="detalhes/ebook3.html">Detalhes</a>
+            </div>
+        </div>
+        <div class="ebook-item">
+            <h3>A História dos Computadores: De Alan Turing a Hoje</h3>
+            <div class="cover" style="background-image: url('imagens/ebook4.jpg');"></div>
+            <p>Explore a evolução histórica dos computadores e suas inovações.</p>
+            <div class="buttons">
+                <a class="download-btn" href="download/ebook4.pdf" download>Baixar</a>
+                <a class="details-btn" href="detalhes/ebook4.html">Detalhes</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Avançando no Mundo Digital -->
+    <div id="tab2" class="ebooks-list" style="display:none;">
+        <div class="ebook-item">
+            <h3>Programação em Python para Iniciantes</h3>
+            <div class="cover" style="background-image: url('imagens/ebook5.jpg');"></div>
+            <p>Aprenda os conceitos básicos da programação usando Python.</p>
+            <div class="buttons">
+                <a class="download-btn" href="download/ebook5.pdf" download>Baixar</a>
+                <a class="details-btn" href="detalhes/ebook5.html">Detalhes</a>
+            </div>
+        </div>
+        <div class="ebook-item">
+            <h3>Construindo Sistemas de Redes Seguras</h3>
+            <div class="cover" style="background-image: url('imagens/ebook6.jpg');"></div>
+            <p>Conheça as melhores práticas para criar redes seguras.</p>
+            <div class="buttons">
+                <a class="download-btn" href="download/ebook6.pdf" download>Baixar</a>
+                <a class="details-btn" href="detalhes/ebook6.html">Detalhes</a>
+            </div>
+        </div>
+        <div class="ebook-item">
+            <h3>Computação em Nuvem: Conceitos e Aplicações</h3>
+            <div class="cover" style="background-image: url('imagens/ebook7.jpg');"></div>
+            <p>Descubra o que é computação em nuvem e suas aplicações.</p>
+            <div class="buttons">
+                <a class="download-btn" href="download/ebook7.pdf" download>Baixar</a>
+                <a class="details-btn" href="detalhes/ebook7.html">Detalhes</a>
+            </div>
+        </div>
+        <div class="ebook-item">
+            <h3>Desenvolvimento de Software com Metodologias Ágeis</h3>
+            <div class="cover" style="background-image: url('imagens/ebook8.jpg');"></div>
+            <p>Entenda como usar metodologias ágeis no desenvolvimento de software.</p>
+            <div class="buttons">
+                <a class="download-btn" href="download/ebook8.pdf" download>Baixar</a>
+                <a class="details-btn" href="detalhes/ebook8.html">Detalhes</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    // Função para alternar entre as abas
+    function showTab(tabNumber) {
+        if (tabNumber === 1) {
+            document.getElementById("tab1").style.display = "block";
+            document.getElementById("tab2").style.display = "none";
+        } else {
+            document.getElementById("tab1").style.display = "none";
+            document.getElementById("tab2").style.display = "block";
+        }
+    }
+</script>
+
+  <footer>
+       <center> <p>© 2025 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer Cyber</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(120deg, #4a90e2, #9013fe);
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho com fundo preto */
+        header {
+            background-color: #000; /* Fundo preto para o cabeçalho */
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Espaço para logo da empresa */
+        .logo {
+            width: 120px; /* Tamanho da logo */
+            height: auto;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            letter-spacing: 1px;
+            color: #fff;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #4a90e2;
+        }
+
+        /* Seção de hero com fundo gradiente */
+        .hero {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            margin: 2rem auto;
+            max-width: 900px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #fff; /* Cor do texto do título */
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: #fff; /* Cor do texto da descrição */
+        }
+
+        .hero a {
+            display: inline-block;
+            text-decoration: none;
+            color: #000;
+            background-color: #4a90e2;
+            padding: 0.8rem 2rem;
+            font-size: 1rem;
+            border-radius: 50px;
+            transition: background-color 0.3s;
+        }
+
+        .hero a:hover {
+            background-color: #9013fe;
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: rgba(0, 0, 0, 0.8);
+            margin-top: 2rem;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- Espaço para logo -->
+        <img src="imagens/logo.png" alt="Logo da empresa" class="logo">
+        <h1>Primer Cyber</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="Sobre.html">Sobre</a></li>
+                <li><a href="serviços.html">Serviços</a></li>
+                <li><a href="ebook.html">eBooks</a></li>
+                <li><a href="Contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Bem-vindo à Primer Cyber</h2>
+        <p>Explore nosso conteúdo incrível e descubra como podemos ajudá-lo a alcançar seus objetivos.</p>
+        <a href="saibamais.html">Saiba Mais</a>
+    </section>
+
+    <footer>
+        <p>© 2022 Primer Cyber Infortech. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

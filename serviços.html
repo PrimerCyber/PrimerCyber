@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços - Primer Cyber Infortech</title>
+    <!-- Link para o Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Barra de navegação */
+        nav {
+            background-color: #4a90e2;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            padding: 10px 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #9013fe;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin-top: 60px; /* Para não sobrepor a barra de navegação */
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding-top: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2rem;
+            color: #4a90e2;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .service {
+            background-color: white;
+            border-radius: 8px;
+            width: 48%;
+            margin-bottom: 20px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .service-icon {
+            font-size: 50px;
+            color: #4a90e2;
+            margin-bottom: 20px;
+            transition: color 0.3s;
+        }
+
+        .service:hover .service-icon {
+            color: #9013fe;
+        }
+
+        .service h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #4a90e2;
+        }
+
+        .service p {
+            font-size: 1rem;
+            color: #777;
+            margin-bottom: 15px;
+        }
+
+        .service-price {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #4a90e2;
+        }
+
+        .service-btn {
+            background-color: #4a90e2;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .service-btn:hover {
+            background-color: #9013fe;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .service {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- Barra de Navegação -->
+<nav>
+  <ul>
+                <li><a href="file:///C:/Users/Wilker/Documents/root/index.html">Início</a></li>
+                <li><a href="file:///C:/Users/Wilker/Documents/root/Sobre.html">Sobre</a></li>
+                <li><a href="file:///C:/Users/Wilker/Documents/root/serviços.html">Serviços</a></li>
+                <li><a href="file:///C:/Users/Wilker/Documents/root/ebook.html">eBooks</a></li>
+                <li><a href="file:///C:/Users/Wilker/Documents/root/Contato.html#">Contato</a></li>
+            </ul>
+</nav>
+
+<div class="container">
+    <h1 id="servicos">Serviços da Primer Cyber Infortech</h1>
+    
+    <div class="services">
+        <!-- Serviço 1: Manutenção de Computadores -->
+        <div class="service">
+            <div class="service-icon">
+                <i class="fas fa-tools"></i>
+            </div>
+            <h3>Manutenção de Computadores</h3>
+            <p>Realizamos manutenção completa, desde a limpeza até o upgrade de componentes.</p>
+            <p class="service-price">A partir de R$ 150,00</p>
+            <a class="service-btn" href="#">Saiba Mais</a>
+        </div>
+
+        <!-- Serviço 2: Manutenção de Notebooks -->
+        <div class="service">
+            <div class="service-icon">
+                <i class="fas fa-laptop"></i>
+            </div>
+            <h3>Manutenção de Notebooks</h3>
+            <p>Cuide do seu notebook com nossos serviços especializados em hardware e software.</p>
+            <p class="service-price">A partir de R$ 180,00</p>
+            <a class="service-btn" href="#">Saiba Mais</a>
+        </div>
+
+        <!-- Serviço 3: Montagem de PCs Personalizados -->
+        <div class="service">
+            <div class="service-icon">
+                <i class="fas fa-desktop"></i>
+            </div>
+            <h3>Montagem de PCs Personalizados</h3>
+            <p>Monte um PC sob medida, com as peças e configurações que atendem às suas necessidades.</p>
+            <p class="service-price">A partir de R$ 700,00</p>
+            <a class="service-btn" href="#">Saiba Mais</a>
+        </div>
+
+        <!-- Serviço 4: Instalação de Softwares -->
+        <div class="service">
+            <div class="service-icon">
+                <i class="fas fa-cogs"></i>
+            </div>
+            <h3>Instalação de Softwares</h3>
+            <p>Instalamos e configuramos os melhores softwares para o seu uso profissional e pessoal.</p>
+            <p class="service-price">A partir de R$ 100,00</p>
+            <a class="service-btn" href="#">Saiba Mais</a>
+        </div>
+
+        <!-- Serviço 5: Consultoria em TI -->
+        <div class="service">
+            <div class="service-icon">
+                <i class="fas fa-chalkboard-teacher"></i>
+            </div>
+            <h3>Consultoria em TI</h3>
+            <p>Consultoria personalizada para otimização e segurança dos seus sistemas e rede.</p>
+            <p class="service-price">A partir de R$ 250,00</p>
+            <a class="service-btn" href="#">Saiba Mais</a>
+        </div>
+    </div>
+</div>
+ <footer>
+       <center> <p>© 2022 Primer Cyber infortech. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
